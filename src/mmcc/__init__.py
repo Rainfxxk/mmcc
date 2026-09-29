@@ -16,6 +16,10 @@ def main() -> None:
     )
     while True:
         user_input = input("> ")
+
+        if user_input == ":q":
+            exit()
+
         resp = client.messages.create(
             model=model_name,
             max_tokens=2048,
