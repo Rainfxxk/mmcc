@@ -7,7 +7,7 @@
 
 |feature|support|
 |:------|:------|
-|loop|❌|
+|loop|✅|
 |context|❌|
 |tool|❌|
 |context compact|❌|

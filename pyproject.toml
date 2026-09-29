@@ -7,7 +7,9 @@ authors = [
     { name = "Rain Zhang", email = "346731704@qq.com" }
 ]
 requires-python = ">=3.9"
-dependencies = []
+dependencies = [
+    "anthropic>=0.125.0",
+]
 
 [project.scripts]
 mmcc = "mmcc:main"
