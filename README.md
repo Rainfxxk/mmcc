@@ -13,6 +13,7 @@
 |context compact|❌|
 |subagent|❌|
 |skill|❌|
+|command|❌|
 
 
 ## ⚙️Configuration
