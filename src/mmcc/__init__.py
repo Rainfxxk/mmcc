@@ -14,20 +14,30 @@ def main() -> None:
         base_url=base_url,
         timeout=600,
     )
+
+    context = []
+
     while True:
         user_input = input("> ")
 
         if user_input == ":q":
             exit()
 
+        context.append({
+            "role": "user",
+            "content": user_input,
+        })
+
         resp = client.messages.create(
             model=model_name,
             max_tokens=2048,
-            messages=[{
-                "role": "user",
-                "content": user_input
-            }],
+            messages=context,
         )
+
         for block in resp.content:
             if block.type == "text":
+                context.append({
+                    "role": "assistant",
+                    "content": block.text,
+                })
                 print(block.text)

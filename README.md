@@ -8,7 +8,7 @@
 |feature|support|
 |:------|:------|
 |loop|✅|
-|context|❌|
+|context|✅|
 |tool|❌|
 |context compact|❌|
 |subagent|❌|
